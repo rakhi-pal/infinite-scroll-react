@@ -1,0 +1,6 @@
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #FAF9F6;
+}
