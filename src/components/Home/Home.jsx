@@ -24,8 +24,8 @@ export default function Home ({history}) {
   
     }, [loading, hasMore])
 
-    var rows = [];
-    for (var i = 0; i < 50; i++) {
+    const rows = [];
+    for (let i = 0; i < 50; i++) {
         rows.push(<div className='fake-cards'>
                     <Skeleton key={i+'1st'} variant="rect" width={250} height={160}/>
                     <Skeleton key={i+'2nd'} width="50%"  height={50}/>
