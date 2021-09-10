@@ -1,6 +1,6 @@
 import './App.css';
-import React, {useState} from 'react';
-import { Router, Route, Switch, useHistory } from 'react-router-dom';
+import React from 'react';
+import { Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import useLoginToken from './customHook/useLoginToken';
