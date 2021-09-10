@@ -4,3 +4,9 @@
     justify-content: space-evenly;
     background-color: #FAF9F6;
 }
+
+.fake-cards {
+    border-radius: 10;
+    padding: 5;
+    margin: 1rem;
+}

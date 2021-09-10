@@ -3,6 +3,8 @@ import useFetchData from '../../customHook/useFetchData';
 import MediaCard from '../MediaCard/MediaCard';
 import MenuAppBar from '../MenuAppBar/MenuAppBar';
 import './Home.css';
+import Skeleton from '@material-ui/lab/Skeleton';
+import Box from '@material-ui/core/Box';
 
 export default function Home ({history}) {
     const count = 50;
@@ -21,19 +23,33 @@ export default function Home ({history}) {
       if(node) observer.current.observe(node);
   
     }, [loading, hasMore])
+
+    var rows = [];
+    for (var i = 0; i < 50; i++) {
+        rows.push(<div className='fake-cards'>
+                    <Skeleton key={i+'1st'} variant="rect" width={250} height={160}/>
+                    <Skeleton key={i+'2nd'} width="50%"  height={50}/>
+                    <Box pt={0.5}>
+                        <Skeleton key={i + '3rd'} width="80%" />
+                        <Skeleton key={i + '4th'} width="60%" />
+                        <Skeleton key={i + '5th'} width="60%" />
+                    </Box>
+            </div>);
+    }
     return (
       <React.Fragment>
         <MenuAppBar history={history}></MenuAppBar>
         <div className="contact-info">
-          {data.map((user, i) => {
-            if(i+1 === data.length) {
-              return <MediaCard ref={lastItemRef} key={user.login.uuid} user={user} image={user.picture.large} title={user.name.first + user.name.last}></MediaCard>
-            } else {
-              return <MediaCard  key={user.login.uuid}user={user} image={user.picture.large} title={user.name.first + user.name.last}></MediaCard>
+            {!loading ? data.map((user, i) => {
+                    if(i+1 === data.length) {
+                    return <MediaCard ref={lastItemRef} key={user.login.uuid} user={user} image={user.picture.large} title={user.name.first + user.name.last}></MediaCard>
+                    } else {
+                    return <MediaCard  key={user.login.uuid}user={user} image={user.picture.large} title={user.name.first + user.name.last}></MediaCard>
+                    }
+                }) : 
+                rows
             }
-          })}
         </div>
-        <div>{loading ? 'Loading...':''}</div>
         <div>{error ? 'Error...': ''}</div>
       </React.Fragment>
     );
