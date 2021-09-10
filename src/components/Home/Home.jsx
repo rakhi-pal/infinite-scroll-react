@@ -26,7 +26,7 @@ export default function Home ({history}) {
 
     const rows = [];
     for (let i = 0; i < 50; i++) {
-        rows.push(<div className='fake-cards'>
+        rows.push(<div key={i+'0th'} className='fake-cards'>
                     <Skeleton key={i+'1st'} variant="rect" width={250} height={160}/>
                     <Skeleton key={i+'2nd'} width="50%"  height={50}/>
                     <Box pt={0.5}>

@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import {TextField} from '@material-ui/core';
 import './Login.css';
@@ -9,8 +9,6 @@ export default function Login({ setToken, history }) {
     const [username, setUserName] = useState();
     const [password, setPassword] = useState();
     const [loginError, setLoginError] = useState(false);
-
-    const usernameRef = useRef();
   
     const handleSubmit = e => {
       e.preventDefault();
@@ -30,13 +28,25 @@ export default function Login({ setToken, history }) {
           </div>
           <div className='text-input'>
             <TextField error={loginError}
-               id="Username" label="Username" variant="outlined" onChange={e => setUserName(e.target.value)} />
+               id="Username" 
+               label="Username" 
+               variant="outlined" 
+               onChange={e => setUserName(e.target.value)} />
           </div>
           <div className='text-input'>
-            <TextField error={loginError} helperText={loginError ? "Incorrect username or password": ''} type="password" id="password" label="Password" variant="outlined" onChange={e => setPassword(e.target.value)}/>
+            <TextField error={loginError} helperText={loginError ? "Incorrect username or password": ''} 
+              type="password" 
+              autoComplete="cc-csc"
+              id="password" 
+              label="Password" 
+              variant="outlined" 
+              onChange={e => setPassword(e.target.value)}/>
           </div>
           <div className='login-btn-container'>
-            <Button className='login-btn' variant="contained" color="primary" onClick={e => handleSubmit(e)}>Login</Button>
+            <Button className='login-btn' 
+              variant="contained" 
+              color="primary" 
+              onClick={e => handleSubmit(e)}>Login</Button>
           </div>
         </form>
       </div>

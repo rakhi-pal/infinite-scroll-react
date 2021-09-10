@@ -22,7 +22,7 @@ export default function useFetchData(count, start) {
             setError(true);
         });}, 1000);
 
-    }, [start])
+    }, [start, count])
     
     return {loading, error, data, hasMore};
 }
