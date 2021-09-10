@@ -7,12 +7,16 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   card: {
+    flex: '1 1 0',
     minWidth: 250,
     maxWidth: 250,
     minHeight: 270,
     borderRadius: 10,
     padding: 5,
-    margin: '1rem'
+    margin: '1rem',
+    '&:hover': {
+			transform: 'scale(1.3)'
+    }
   },
   media: {
     height: 140,
