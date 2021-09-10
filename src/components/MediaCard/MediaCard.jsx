@@ -9,7 +9,7 @@ const useStyles = makeStyles({
   card: {
     minWidth: 250,
     maxWidth: 250,
-    minHeight: 320,
+    minHeight: 270,
     borderRadius: 10,
     padding: 5,
     margin: '1rem'
@@ -34,7 +34,9 @@ const MediaCard = React.forwardRef(({image, title, user}, ref) => {
             {user.name.first +" " + user.name.last}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            <label>{user.email}</label>
+            <label>{user.email}</label><br/>
+            <label>phone: {user.phone}</label><br/>
+            <label>cell: {user.cell}</label>
           </Typography>
         </CardContent>
     </Card>

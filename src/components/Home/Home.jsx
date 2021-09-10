@@ -2,6 +2,7 @@ import React, { useState, useRef, useCallback } from 'react';
 import useFetchData from '../../customHook/useFetchData';
 import MediaCard from '../MediaCard/MediaCard';
 import MenuAppBar from '../MenuAppBar/MenuAppBar';
+import './Home.css';
 
 export default function Home ({history}) {
     const count = 50;
