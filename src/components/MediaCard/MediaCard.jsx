@@ -19,23 +19,22 @@ const useStyles = makeStyles({
   },
 });
 
-const MediaCard = React.forwardRef(({image, title}, ref) => {
+const MediaCard = React.forwardRef(({image, title, user}, ref) => {
   const classes = useStyles();
 
   return (
     <Card ref={ref} className={classes.card}>
       <CardMedia
         className={classes.media}
-        image={image}
-        title={title}
+        image={user.picture.large}
+        title={user.name.first +" " + user.name.last}
       />
       <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            {user.name.first +" " + user.name.last}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            <label>{user.email}</label>
           </Typography>
         </CardContent>
     </Card>

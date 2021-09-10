@@ -1,40 +1,35 @@
 import './App.css';
-import React, { useState, useRef, useCallback } from 'react';
-import useFetchData from './customHook/useFetchData';
-import MediaCard from "./components/MediaCard/MediaCard";
+import React, {useState} from 'react';
+import { Router, Route, Switch, useHistory } from 'react-router-dom';
+import Home from './components/Home/Home';
+import Login from './components/Login/Login';
+import useLoginToken from './customHook/useLoginToken';
 
-function App() {
-  const count = 50;
-  const [start, setStart] = useState(1);
-  const {loading, error, data, hasMore} = useFetchData(count, start);
-  const observer = useRef(null);
-  const lastItemRef = useCallback(node => {
-    if(loading) return;
-    if(observer.current) observer.current.disconnect();
-    observer.current = new IntersectionObserver(entries => {
-      if(entries[0].isIntersecting && hasMore) {
-        setStart(prevStart => prevStart + count);
-      }
+function App({history}) {
+  const {token, setToken} = useLoginToken();
 
-    })
-    if(node) observer.current.observe(node);
+  if(!token) {
+    return <Login setToken={setToken} history={history} />
+  }
+  return(
+    <>
+      <Router history={history}>
+        <Switch>
+            <Route path="/login">
+              <Login setToken={setToken} history={history}/>
+            </Route>
+            <Route path="/home">
+              <Home history={history}></Home>
+            </Route>
+            <Route path="/">
+            <Login setToken={setToken} history={history}/>
+            </Route>
+          </Switch>
+      </Router>
+    </>
+    
+  )
 
-  }, [loading, hasMore])
-  return (
-    <React.Fragment>
-      <div className="contact-info">
-        {data.map((user, i) => {
-          if(i+1 === data.length) {
-            return <MediaCard ref={lastItemRef} key={user.login.uuid} image={user.picture.medium} title={user.name.first + user.name.last}></MediaCard>
-          } else {
-            return <MediaCard  key={user.login.uuid} image={user.picture.medium} title={user.name.first + user.name.last}></MediaCard>
-          }
-        })}
-      </div>
-      <div>{loading ? 'Loading...':''}</div>
-      <div>{error ? 'Error...': ''}</div>
-    </React.Fragment>
-  );
 }
 
 export default App;
