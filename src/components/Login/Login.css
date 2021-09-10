@@ -9,8 +9,8 @@
     background-image: url("../../resources/loginBackground.jpg");
 }
 .login-form {
-    padding: 1rem;
-    margin: 4rem;
+    padding: 2rem;
+    margin: 15rem 0;
     background-color: #ffffff;
 }
 .login-btn-container,
