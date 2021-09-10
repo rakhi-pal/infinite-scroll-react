@@ -19,7 +19,9 @@ const useStyles = makeStyles({
     }
   },
   media: {
-    height: 140,
+    height: 128,
+    width: 128,
+    borderRadius: 10
   },
 });
 
