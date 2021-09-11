@@ -31,7 +31,9 @@ It uses React-router-dom for routing to different pages. It also uses Material U
 
 Steps to run the application -
 ● "npm i" can be used to download the dependencies
+
 ● "npm run start" can be used to run the application (http://localhost:3000 to be accessed in the browser).
+
 ● for login -> username: "foo", password: "bar" can be used.
 
 ## Design Decisions
