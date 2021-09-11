@@ -1,7 +1,8 @@
 import { render } from '@testing-library/react';
 import MediaCard from './MediaCard';
-import { mount } from 'enzyme';
-import Card from '@material-ui/core/Card';
+import {create, act} from 'react-test-renderer'; 
+import Card from '@material-ui/core';
+
 test('renders MediaCard component', () => {
     const props = {
         user: {
@@ -35,7 +36,10 @@ test('Card component renders inside MediaCard component', () => {
             cell: '1234567890'
         }
     }
-    const MediaCardComponent = mount(<MediaCard {...props} />);
-    expect(MediaCardComponent).toMatchSnapshot();
-    expect(MediaCardComponent).toBeDefined(Card)
+
+    let MediaCardComponent;
+    act(() => {
+        MediaCardComponent = create(<MediaCard {...props} />);
+    })
+    expect(MediaCardComponent.toJSON()).toMatchSnapshot();
 });

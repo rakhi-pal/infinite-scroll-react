@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component renders inside MediaCard component 1`] = `
+<div
+  className="MuiPaper-root MuiCard-root makeStyles-card-3 MuiPaper-elevation1 MuiPaper-rounded"
+>
+  <div
+    className="MuiCardMedia-root makeStyles-media-4"
+    style={
+      Object {
+        "backgroundImage": "url(\\"abc.png\\")",
+      }
+    }
+    title="first last"
+  />
+  <div
+    className="MuiCardContent-root"
+  >
+    <h2
+      className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+    >
+      first last
+    </h2>
+    <p
+      className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+    >
+      <label>
+        abc@test.com
+      </label>
+      <br />
+      <label>
+        phone: 
+        1234565
+      </label>
+      <br />
+      <label>
+        cell: 
+        1234567890
+      </label>
+    </p>
+  </div>
+</div>
+`;
