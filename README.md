@@ -74,4 +74,8 @@ Steps to run the application -
 
    ![image](https://user-images.githubusercontent.com/19649429/132956738-e196657c-cb0f-4243-9fbc-b3eaa9bf22dc.png)
 
+4. Responsive 320 * 480
+
+![image](https://user-images.githubusercontent.com/19649429/132956888-37b475eb-c42e-4bf8-9216-3461b42abc02.png)
+
 
