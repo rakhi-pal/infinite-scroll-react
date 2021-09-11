@@ -65,10 +65,13 @@ Steps to run the application -
 
 ## Screens
 1. Login
+
  ![image](https://user-images.githubusercontent.com/19649429/132956655-c0ae2e72-1b84-4ea9-a308-ac9fca1a6550.png)
 2. Contacts List
+
   ![image](https://user-images.githubusercontent.com/19649429/132956701-96fe9df8-ac96-41f6-8fdc-0428e0662cd3.png)
 3. Skeleton Loading
+
    ![image](https://user-images.githubusercontent.com/19649429/132956738-e196657c-cb0f-4243-9fbc-b3eaa9bf22dc.png)
 
 
