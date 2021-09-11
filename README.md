@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+## Problem Statement:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Create an responsive infinite scrolling list in react for a fixed array of items.
 
-## Available Scripts
+## Specs:
+The app must be a authenticated app. It can accept fake login with details, username: foo, password: bar.
+Post login route is '/home'. This route shows our main list UI. This page shouldn't be accessible by non logged in users.
+logged in pages must show logout button. On click of this logout it will redirect to the login page.
+There's no need to implement a server for fake login functionality. We're not going to judge you for doing so.
+UI must be built using react.
+The list is a contact list of user and photo. It can look like this. This design is just for your reference. Any deviations from this design is fine. There's no need for drop down or drawers. Just a list is sufficient.
+It should look correct at least for a 320x480 sized view-port.
+You can use a static list of users like this or use this free random user api if you fancy that.
+Initially only load a partial list and when user scrolls to end of page. App shows loading feedback and loads more contacts after a delay of 1 sec.
+You can use any open source lib. That's fine.
 
-In the project directory, you can run:
 
-### `yarn start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project is developed using React with functional components and hooks(ES6+).
+It uses React-router-dom for routing to different pages. It also uses Material UI components. It provides a responsive infinite scrolling list with the following reuirements met.
+1.	The app must be a authenticated app.
+2.	Post Login we should display the home page with the list of contacts.
+3.	The list is a contact list of user and photo.
+4.	The app should be responsive.
+5.	Initially, a partial list is loaded.
+6.	 App shows loading feedback and loads more contacts after a delay of 1 sec.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation and Running test cases
+● yarn/nmp is used as a package manager 
 
-### `yarn test`
+Steps to run the application -
+● "npm i" can be used to download the dependencies
+● "npm run start" can be used to run the application (http://localhost:3000 to be accessed in the browser).
+● for login -> username: "foo", password: "bar" can be used.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Design Decisions
 
-### `yarn build`
+1. Function component based development methodology is used.
+2. I have though of having seperation of concerns while designing this simple application.
+3. You can find the seperation of the concerns in the src/components directory.
+4. Multiple components are created to handle different functionalities.
+5. Custom hooks are created for implementing fetching the data on infinite scroll and managing the login session.
+6. Material UI is used for creating the components.
+7. Error handling for wrong username/password.
+8. Skeleton loader is used to display the loading feedback.
+9. The contact info is displayed as (user pic, user name, user email, user phone number and cell number)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Trade offs or Further Enhancements - if given extra time
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ ● We can so the testing of the components using jest. 
+ ● Performance of the application can be improved.
+ ● UI can be enhanced further.
+ ● Favorites list can be stored in the localhost and retrieved from there.
+ 
