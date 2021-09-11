@@ -23,6 +23,7 @@ Object {
           >
             <div
               class="MuiFormControl-root MuiTextField-root"
+              data-testid="username-textbox"
             >
               <label
                 class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -62,6 +63,7 @@ Object {
           >
             <div
               class="MuiFormControl-root MuiTextField-root"
+              data-testid="password"
             >
               <label
                 class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -103,6 +105,7 @@ Object {
           >
             <button
               class="MuiButtonBase-root MuiButton-root MuiButton-contained login-btn MuiButton-containedPrimary"
+              data-testid="loginBtn"
               tabindex="0"
               type="button"
             >
@@ -139,6 +142,7 @@ Object {
         >
           <div
             class="MuiFormControl-root MuiTextField-root"
+            data-testid="username-textbox"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -178,6 +182,7 @@ Object {
         >
           <div
             class="MuiFormControl-root MuiTextField-root"
+            data-testid="password"
           >
             <label
               class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -219,6 +224,7 @@ Object {
         >
           <button
             class="MuiButtonBase-root MuiButton-root MuiButton-contained login-btn MuiButton-containedPrimary"
+            data-testid="loginBtn"
             tabindex="0"
             type="button"
           >

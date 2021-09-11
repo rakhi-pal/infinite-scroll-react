@@ -20,6 +20,7 @@ exports[`history as props 1`] = `
     >
       <div
         className="MuiFormControl-root MuiTextField-root"
+        data-testid="username-textbox"
       >
         <label
           className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -66,6 +67,7 @@ exports[`history as props 1`] = `
     >
       <div
         className="MuiFormControl-root MuiTextField-root"
+        data-testid="password"
       >
         <label
           className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -114,6 +116,7 @@ exports[`history as props 1`] = `
     >
       <button
         className="MuiButtonBase-root MuiButton-root MuiButton-contained login-btn MuiButton-containedPrimary"
+        data-testid="loginBtn"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -164,6 +167,7 @@ exports[`history as props 2`] = `
     >
       <div
         className="MuiFormControl-root MuiTextField-root"
+        data-testid="username-textbox"
       >
         <label
           className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -210,6 +214,7 @@ exports[`history as props 2`] = `
     >
       <div
         className="MuiFormControl-root MuiTextField-root"
+        data-testid="password"
       >
         <label
           className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -258,6 +263,7 @@ exports[`history as props 2`] = `
     >
       <button
         className="MuiButtonBase-root MuiButton-root MuiButton-contained login-btn MuiButton-containedPrimary"
+        data-testid="loginBtn"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -308,6 +314,7 @@ exports[`renders App component 1`] = `
     >
       <div
         className="MuiFormControl-root MuiTextField-root"
+        data-testid="username-textbox"
       >
         <label
           className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -354,6 +361,7 @@ exports[`renders App component 1`] = `
     >
       <div
         className="MuiFormControl-root MuiTextField-root"
+        data-testid="password"
       >
         <label
           className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -402,6 +410,7 @@ exports[`renders App component 1`] = `
     >
       <button
         className="MuiButtonBase-root MuiButton-root MuiButton-contained login-btn MuiButton-containedPrimary"
+        data-testid="loginBtn"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -452,6 +461,7 @@ exports[`renders App component 2`] = `
     >
       <div
         className="MuiFormControl-root MuiTextField-root"
+        data-testid="username-textbox"
       >
         <label
           className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -498,6 +508,7 @@ exports[`renders App component 2`] = `
     >
       <div
         className="MuiFormControl-root MuiTextField-root"
+        data-testid="password"
       >
         <label
           className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined"
@@ -546,6 +557,7 @@ exports[`renders App component 2`] = `
     >
       <button
         className="MuiButtonBase-root MuiButton-root MuiButton-contained login-btn MuiButton-containedPrimary"
+        data-testid="loginBtn"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}

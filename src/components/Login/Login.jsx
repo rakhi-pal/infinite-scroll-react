@@ -9,9 +9,15 @@ export default function Login({ setToken, history }) {
     const [username, setUserName] = useState();
     const [password, setPassword] = useState();
     const [loginError, setLoginError] = useState(false);
+    const [isValid, setIsValid] = useState(true);
   
     const handleSubmit = e => {
       e.preventDefault();
+      if(!username || !password) {
+        setLoginError(true);
+        setIsValid(false);
+        return;
+      }
       if(username === 'foo' && password === 'bar') {
         setToken('12345');
         history.push('/home');
@@ -29,13 +35,17 @@ export default function Login({ setToken, history }) {
           <div className='text-input'>
             <TextField error={loginError}
                id="Username" 
+               data-testid="username-textbox"
                label="Username" 
                variant="outlined" 
                onChange={e => setUserName(e.target.value)} />
           </div>
           <div className='text-input'>
-            <TextField error={loginError} helperText={loginError ? "Incorrect username or password": ''} 
+            <TextField error={loginError} helperText={loginError ? !isValid ? "Please enter username/password" 
+                                                                           : "Incorrect username or password"
+                                                                 : ''} 
               type="password" 
+              data-testid="password"
               autoComplete="cc-csc"
               id="password" 
               label="Password" 
@@ -45,6 +55,7 @@ export default function Login({ setToken, history }) {
           <div className='login-btn-container'>
             <Button className='login-btn' 
               variant="contained" 
+              data-testid="loginBtn"
               color="primary" 
               onClick={e => handleSubmit(e)}>Login</Button>
           </div>
