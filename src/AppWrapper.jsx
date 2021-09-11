@@ -7,5 +7,4 @@ const AppWrapper = () => {
         <App history={history} />
     )
 }
-
 export default AppWrapper;

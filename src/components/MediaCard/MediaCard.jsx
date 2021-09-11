@@ -1,29 +1,9 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-
-const useStyles = makeStyles({
-  card: {
-    flex: '1 1 0',
-    minWidth: 250,
-    maxWidth: 250,
-    minHeight: 270,
-    borderRadius: 10,
-    padding: 5,
-    margin: '1rem',
-    '&:hover': {
-			transform: 'scale(1.3)'
-    }
-  },
-  media: {
-    height: 128,
-    width: 128,
-    borderRadius: 10
-  },
-});
+import { useStyles } from './MediaCard.css';
 
 const MediaCard = React.forwardRef(({image, title, user}, ref) => {
   const classes = useStyles();

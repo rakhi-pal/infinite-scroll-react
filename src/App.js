@@ -27,9 +27,7 @@ function App({history}) {
           </Switch>
       </Router>
     </>
-    
   )
-
 }
 
 export default App;

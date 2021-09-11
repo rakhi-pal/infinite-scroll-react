@@ -48,8 +48,6 @@ Steps to run the application -
 
 ## Trade offs or Further Enhancements - if given extra time
 
- ● We can so the testing of the components using jest. 
  ● Performance of the application can be improved.
  ● UI can be enhanced further.
- ● Favorites list can be stored in the localhost and retrieved from there.
  
