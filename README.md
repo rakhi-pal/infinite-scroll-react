@@ -46,8 +46,12 @@ Steps to run the application -
 8. Skeleton loader is used to display the loading feedback.
 9. The contact info is displayed as (user pic, user name, user email, user phone number and cell number)
 
-## Trade offs or Further Enhancements - if given extra time
+## Trade offs or Further Enhancements/Limitations - if given extra time
 
+ ● TypeScript was prefered to be used here, but since I am new to TypeScript I have purposefully opted out of it. I wanted to display what I am strong with.
+ ● We can have Bi-directional infinite scroll which will help us to remove the earlier dom nodes based on the visible nodes in the current viewport.
  ● Performance of the application can be improved.
  ● UI can be enhanced further.
+ ● Currently all the strings are hardcoded, it can be further enhanced to support Localization.
+
  

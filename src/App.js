@@ -3,7 +3,7 @@ import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
-import useLoginToken from './customHook/useLoginToken';
+import useLoginToken from './customHooks/useLoginToken';
 
 function App({history}) {
   const {token, setToken} = useLoginToken();

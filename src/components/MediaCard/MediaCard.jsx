@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { useStyles } from './MediaCard.css';
 
-const MediaCard = React.forwardRef(({image, title, user}, ref) => {
+const MediaCard = React.forwardRef(({user}, ref) => {
   const classes = useStyles();
 
   return (
