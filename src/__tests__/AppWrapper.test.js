@@ -1,7 +1,8 @@
-import { render } from '@testing-library/react';
+import { render, cleanup } from '@testing-library/react';
 import AppWrapper from '../AppWrapper';
 
-test('renders learn react link', () => {
+afterEach(cleanup);
+test('renders App Wrapper component and tests snapshots', () => {
   const AppWrapperComponent = render(<AppWrapper />);
   expect(AppWrapperComponent).toMatchSnapshot();
 });

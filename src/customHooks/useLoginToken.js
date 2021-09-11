@@ -7,13 +7,13 @@ export default function useLoginToken() {
     return userToken;
   };
 
+  const [token, setToken] = useState(getToken());
+  
   const removeToken = () => {
     localStorage.removeItem('token');
     setToken(getToken());
     return true;
   };
-
-  const [token, setToken] = useState(getToken());
 
   const saveToken = userToken => {
     localStorage.setItem('token', JSON.stringify(userToken));
