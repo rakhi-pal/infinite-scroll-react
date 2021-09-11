@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import MediaCard from './MediaCard';
+import MediaCard from '../components/MediaCard/MediaCard';
 import {create, act} from 'react-test-renderer'; 
 import Card from '@material-ui/core';
 
