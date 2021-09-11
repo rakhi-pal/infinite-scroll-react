@@ -63,4 +63,6 @@ Steps to run the application -
  
  ● Currently all the strings are hardcoded, it can be further enhanced to support Localization.
 
- 
+## Screens
+ ![image](https://user-images.githubusercontent.com/19649429/132956655-c0ae2e72-1b84-4ea9-a308-ac9fca1a6550.png)
+
