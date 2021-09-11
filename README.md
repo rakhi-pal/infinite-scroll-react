@@ -34,6 +34,8 @@ Steps to run the application -
 
 ● "npm run start" can be used to run the application (http://localhost:3000 to be accessed in the browser).
 
+● "npm run test" can be used to run the tests.
+
 ● for login -> username: "foo", password: "bar" can be used.
 
 ## Design Decisions
