@@ -13,6 +13,8 @@ export default function Login({ setToken, history }) {
   
     const handleSubmit = e => {
       e.preventDefault();
+      setLoginError(false);
+      setIsValid(true);
       if(!username || !password) {
         setLoginError(true);
         setIsValid(false);

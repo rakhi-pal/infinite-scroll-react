@@ -11,6 +11,7 @@ const MediaCard = React.forwardRef(({user}, ref) => {
   return (
     <Card ref={ref} className={classes.card}>
       <CardMedia
+        data-testid="mediaCard"
         className={classes.media}
         image={user.picture.large}
         title={user.name.first +" " + user.name.last}

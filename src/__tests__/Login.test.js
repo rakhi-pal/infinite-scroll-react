@@ -11,29 +11,29 @@ test('renders Login component', () => {
 
 test('check username textbox is rendered', () => {
   render(<Login setToken={()=>{}}/>);
-  const username = screen.getAllByTestId('username-textbox');
-  expect(username[0]).toBeInTheDocument();
+  const username = screen.getByTestId('username-textbox');
+  expect(username).toBeInTheDocument();
 });
 
 test('check password textbox is rendered', () => {
   render(<Login setToken={()=>{}}/>);
-  const password = screen.getAllByTestId('password');
-  expect(password[0]).toBeInTheDocument();
+  const password = screen.getByTestId('password');
+  expect(password).toBeInTheDocument();
 });
 
 test('check login button is rendered', () => {
   render(<Login setToken={()=>{}}/>);
-  const loginBtn = screen.getAllByTestId('loginBtn');
-  expect(loginBtn[0]).toBeInTheDocument();
+  const loginBtn = screen.getByTestId('loginBtn');
+  expect(loginBtn).toBeInTheDocument();
 });
 
 
 test('click login button no username and password', () => {
   const history = createBrowserHistory();
   render(<Login setToken={()=>{}} history={history}/>);
-  const loginBtn = screen.getAllByTestId('loginBtn');
+  const loginBtn = screen.getByTestId('loginBtn');
   
-  userEvent.click(loginBtn[0]);
+  userEvent.click(loginBtn);
   expect(history.location.pathname).toBe('/');
 });
 
