@@ -31,7 +31,11 @@ It uses React-router-dom for routing to different pages. It also uses Material U
 
 Steps to run the application -
 ● "npm i" can be used to download the dependencies
+
 ● "npm run start" can be used to run the application (http://localhost:3000 to be accessed in the browser).
+
+● "npm run test" can be used to run the tests.
+
 ● for login -> username: "foo", password: "bar" can be used.
 
 ## Design Decisions
@@ -50,9 +54,13 @@ Steps to run the application -
 ## Trade offs or Further Enhancements/Limitations - if given extra time
 
  ● TypeScript was prefered to be used here, but since I am new to TypeScript I have purposefully opted out of it. I wanted to display what I am strong with.
+ 
  ● We can have Bi-directional infinite scroll which will help us to remove the earlier dom nodes based on the visible nodes in the current viewport.
+ 
  ● Performance of the application can be improved.
+ 
  ● UI can be enhanced further.
+ 
  ● Currently all the strings are hardcoded, it can be further enhanced to support Localization.
 
  
