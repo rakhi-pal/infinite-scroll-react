@@ -16,6 +16,7 @@ exports[`renders MediaCard component 1`] = `
   />
   <div
     className="MuiCardContent-root"
+    data-testid="cardContent"
   >
     <h2
       className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"

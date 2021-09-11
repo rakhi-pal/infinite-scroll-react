@@ -10,6 +10,7 @@ Object {
       >
         <header
           class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4"
+          data-testid="appbar"
         >
           <div
             class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
@@ -1449,6 +1450,7 @@ Object {
     >
       <header
         class="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4"
+        data-testid="appbar"
       >
         <div
           class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"

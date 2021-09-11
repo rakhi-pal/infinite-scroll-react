@@ -16,7 +16,7 @@ const MediaCard = React.forwardRef(({user}, ref) => {
         image={user.picture.large}
         title={user.name.first +" " + user.name.last}
       />
-      <CardContent>
+      <CardContent data-testid="cardContent">
           <Typography gutterBottom variant="h5" component="h2">
             {user.name.first +" " + user.name.last}
           </Typography>

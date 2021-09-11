@@ -15,12 +15,11 @@ export default function MenuAppBar({history}) {
     removeToken();
     history.push('/');
     window.location.reload();
-
   }
 
   return (
     <div className={classes.menu}>
-      <AppBar position="static">
+      <AppBar position="static"  data-testid="appbar">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             Contacts
