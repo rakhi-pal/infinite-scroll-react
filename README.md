@@ -46,10 +46,11 @@ Steps to run the application -
 4. Multiple components are created to handle different functionalities.
 5. Custom hooks are created for implementing fetching the data on infinite scroll and managing the login session.
 6. Material UI is used for creating the components.
-7. Error handling for wrong username/password.
+7. Error handling for wrong or no username/password.
 8. Skeleton loader is used to display the loading feedback.
 9. The contact info is displayed as (user pic, user name, user email, user phone number and cell number)
-10. Unit tests, Snapshot tests are added using jest and @testing-library/react
+10. Localhost is used to store the token of the user (provides a means of authentication)
+11. Unit tests, Snapshot tests are added using jest and @testing-library/react
 
 ## Trade offs or Further Enhancements/Limitations - if given extra time
 
