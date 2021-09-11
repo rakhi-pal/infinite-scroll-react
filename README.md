@@ -49,7 +49,7 @@ Steps to run the application -
 7. Error handling for wrong username/password.
 8. Skeleton loader is used to display the loading feedback.
 9. The contact info is displayed as (user pic, user name, user email, user phone number and cell number)
-10. Snapshot testing is added using jest and @testing-library/react
+10. Unit tests, Snapshot tests are added using jest and @testing-library/react
 
 ## Trade offs or Further Enhancements/Limitations - if given extra time
 
